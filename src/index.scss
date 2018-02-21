@@ -1,8 +1,7 @@
+// variables
+$fa-font-path: '../node_modules/font-awesome/fonts/' !default;
+
 // the main bootstrap file
 @import '../node_modules/bootstrap/scss/bootstrap';
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+// font awesome
+@import '../node_modules/font-awesome/scss/font-awesome';

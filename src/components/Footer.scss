@@ -1,0 +1,22 @@
+$logo-box-width: 36px;
+
+.border-top {
+  border-top: 1px solid #dee2e6 !important;
+}
+
+.footer-logo-box {
+  background-color: #222;
+  width: $logo-box-width;
+  border-radius: 6px;
+
+  & img {
+    width: $logo-box-width;
+    height: $logo-box-width;
+    animation: footer-logo-spin infinite 20s linear;
+  }
+
+  @keyframes footer-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+}
