@@ -8,14 +8,14 @@ import { Footer } from './components/Footer';
 class App extends Component {
   render() {
     return (
-      <div className="app-root">
-        <Header/>
+      [
+        <Header/>,
         <Content>
           <Pricing/>
           <Cards/>
           <Footer/>
         </Content>
-      </div>
+      ]
     );
   }
 }
