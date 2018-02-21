@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Header } from './components/Navbar';
+import { Content } from './components/Content';
 import { Pricing } from './components/Pricing';
+import { Cards } from './components/Cards';
 import { Footer } from './components/Footer';
 
 class App extends Component {
@@ -8,10 +10,11 @@ class App extends Component {
     return (
       <div className="app-root">
         <Header/>
-        <Pricing/>
-        <div className="container">
+        <Content>
+          <Pricing/>
+          <Cards/>
           <Footer/>
-        </div>
+        </Content>
       </div>
     );
   }
