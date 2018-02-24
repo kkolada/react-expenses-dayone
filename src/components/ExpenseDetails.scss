@@ -1,0 +1,25 @@
+#expense-details {
+  h6 {
+    text-align: left;
+  }
+  .card-body ul.list-group > li.list-group-item {
+    border-left: none;
+    border-right: none;
+    & > div {
+      text-align: left;
+    }
+
+    &:first-child {
+      border-top: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .badge.badge-pill {
+    line-height: 1.1rem;
+  }
+}

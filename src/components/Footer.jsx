@@ -14,30 +14,30 @@ export const Footer = () => (
       <div className="col-6 col-md">
         <h5>Features</h5>
         <ul className="list-unstyled text-small">
-          <li><a className="text-muted" href="#">Cool stuff</a></li>
-          <li><a className="text-muted" href="#">Random feature</a></li>
-          <li><a className="text-muted" href="#">Team feature</a></li>
-          <li><a className="text-muted" href="#">Stuff for developers</a></li>
-          <li><a className="text-muted" href="#">Another one</a></li>
-          <li><a className="text-muted" href="#">Last time</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Cool stuff</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Random feature</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Team feature</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Stuff for developers</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Another one</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Last time</a></li>
         </ul>
       </div>
       <div className="col-6 col-md">
         <h5>Resources</h5>
         <ul className="list-unstyled text-small">
-          <li><a className="text-muted" href="#">Resource</a></li>
-          <li><a className="text-muted" href="#">Resource name</a></li>
-          <li><a className="text-muted" href="#">Another resource</a></li>
-          <li><a className="text-muted" href="#">Final resource</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Resource</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Resource name</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Another resource</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Final resource</a></li>
         </ul>
       </div>
       <div className="col-6 col-md">
         <h5>About</h5>
         <ul className="list-unstyled text-small">
-          <li><a className="text-muted" href="#">Team</a></li>
-          <li><a className="text-muted" href="#">Locations</a></li>
-          <li><a className="text-muted" href="#">Privacy</a></li>
-          <li><a className="text-muted" href="#">Terms</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Team</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Locations</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Privacy</a></li>
+          <li><a className="text-muted" href="http://dayone.pl/">Terms</a></li>
         </ul>
       </div>
     </div>
