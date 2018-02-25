@@ -1,7 +1,7 @@
 import React from 'react';
 import './ExpenseDetails.css';
 
-export const ExpenseDetails = () => {
+export const ExpenseDetails = ({item}) => {
   return (
     <div id="expense-details" className="card mb-4 box-shadow">
       <div className="card-header">
@@ -12,30 +12,31 @@ export const ExpenseDetails = () => {
           <li className="list-group-item d-flex justify-content-between lh-condensed">
             <div>
               <h6 className="my-0">Category</h6>
-              <small className="text-muted">Food</small>
+              <small className="text-muted">{item.category}</small>
             </div>
           </li>
           <li className="list-group-item d-flex justify-content-between lh-condensed">
             <div>
               <h6 className="my-0">Date</h6>
-              <small className="text-muted">2017-07-10</small>
+              <small className="text-muted">{item.date}</small>
             </div>
           </li>
           <li className="list-group-item d-flex justify-content-between bg-light">
             <div>
               <h6 className="my-0">Amount</h6>
-              <small>11.5 €</small>
+              <small>{item.amount.value} {item.amount.currency}</small>
             </div>
           </li>
           <li className="list-group-item d-flex justify-content-between lh-condensed">
             <div>
               <h6 className="my-0">Description</h6>
-              <small>Lunch shopping</small>
+              <small>{item.description}</small>
             </div>
           </li>
           <li className="list-group-item d-flex justify-content-between">
             <span>Status</span>
-            <span className="badge badge-pill badge-success">PAID</span>
+            {item.pending ? <span className="badge badge-pill badge-info">IN PROGRESS</span> :
+              <span className="badge badge-pill badge-success">PAID</span>}
           </li>
         </ul>
       </div>

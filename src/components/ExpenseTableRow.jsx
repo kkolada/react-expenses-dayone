@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const ExpenseTableRow = ({item}) => {
+export const ExpenseTableRow = ({item, rowClicked}) => {
   return (
-    <tr key={item.id}>
+    <tr onClick={() => rowClicked(item)}>
       <td>{item.category}</td>
       <td>{item.date}</td>
       <td>{item.amount.value} {item.amount.currency}</td>

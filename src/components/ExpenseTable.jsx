@@ -4,9 +4,9 @@ import { ExpenseTableRow } from './ExpenseTableRow';
 import { expenses } from '../data';
 import { map } from 'lodash';
 
-export const ExpenseTable = () => {
+export const ExpenseTable = ({rowClicked}) => {
   const rows = map(expenses, (item) => {
-    return <ExpenseTableRow item={item}/>;
+    return <ExpenseTableRow key={item.id} item={item} rowClicked={rowClicked}/>;
   });
   return (
     <div id="expense-list" className="card mb-4 box-shadow">
