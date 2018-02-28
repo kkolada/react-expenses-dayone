@@ -1,5 +1,6 @@
 import React from 'react';
 import './ExpenseDetails.css';
+import { StatusBadge } from './StatusBadge';
 
 export const ExpenseDetails = ({item}) => {
   return (
@@ -35,8 +36,7 @@ export const ExpenseDetails = ({item}) => {
           </li>
           <li className="list-group-item d-flex justify-content-between">
             <span>Status</span>
-            {item.pending ? <span className="badge badge-pill badge-info">IN PROGRESS</span> :
-              <span className="badge badge-pill badge-success">PAID</span>}
+            <StatusBadge status={item.pending}/>
           </li>
         </ul>
       </div>

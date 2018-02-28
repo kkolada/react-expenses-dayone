@@ -11,6 +11,6 @@ export const Header = () => (
     <nav className="my-2 my-md-0 mr-md-3">
       <a className="p-2" href="http://dayone.pl/" target="_blank" rel="noopener noreferrer">DayOne.pl</a>
     </nav>
-    <button className="btn btn-outline-primary"><i className="fa fa-eur mr-2"></i>Add expense</button>
+    <button className="btn btn-outline-info"><i className="fa fa-eur mr-2"></i>Add expense</button>
   </div>
 );

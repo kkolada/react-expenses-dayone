@@ -1,14 +1,21 @@
 import React from 'react';
+import { StatusBadge } from './StatusBadge';
 
-export const ExpenseTableRow = ({item, rowClicked}) => {
+export const ExpenseTableRow = ({item, rowClicked, statusClicked}) => {
+  const statusClickHandler = (e) => {
+    e.stopPropagation();
+    statusClicked(item);
+  };
+
   return (
     <tr onClick={() => rowClicked(item)}>
       <td>{item.category}</td>
       <td>{item.date}</td>
       <td>{item.amount.value} {item.amount.currency}</td>
       <td>{item.description}</td>
-      <td>{item.pending ? <span className="badge badge-pill badge-info">IN PROGRESS</span> :
-        <span className="badge badge-pill badge-success">PAID</span>}</td>
+      <td onClick={statusClickHandler}>
+        <StatusBadge status={item.pending}/>
+      </td>
     </tr>
   );
 };
